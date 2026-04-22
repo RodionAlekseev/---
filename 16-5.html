@@ -1,0 +1,84 @@
+<html>
+<head>
+<title>Формы</title>
+</head>
+<body bgcolor=#C0C0C0>
+<border=0 width=150 height=24></a><br clear="right">
+<center><font size=6>Элементы диалога</font></center>
+<p>
+<hr color="blue">
+<h2>Пример формы</h2>
+<table border=3 bgcolor="pink">
+<form action="mailto:Имя@сервер.домен" method="post">
+<tr>
+<td><label for="imya1">Имя: </label>
+<td><input type="text" id="imya1">
+<tr>
+<td><label for="familiya1">Фамилия: </label>
+<td><input type="text" id="familiya">
+<tr>
+<td><label for="telefon1">Телефон: </label>
+<td><input type="text" id="telefon1">
+<tr>
+<td>Пол:&nbsp;&nbssp;
+<input type="radio" name="poll" value="Male">М&nbsp;
+<input type="radio" name="poll" value="Female">Ж
+<td align="bottom">
+<input align="botton" type="submit" value="Отослать">
+<input type="reset">
+</form>
+</table>
+<hr color="blue">
+
+<h2>Элемент ISINDEX</h2>
+<insindex prompt="Строка для ввода критерия поиска">
+<hr color="blue">
+<h2>Элементы INPUT</h2>
+<h3>Ввод текстовой строки</h3>
+<input type="text" size=50>
+<h3>Ввод пароля</h3>
+<input type="password">
+<h3>Флажки</h3>
+<input type="checkbox" name="F001" checked>
+<input type="checkbox" name="F001" checked>
+<h3>Переключатели</h3>
+<input type="radio" name="S001" value="Первый">
+<input type="radio" name="S001" value="Второй">
+<input type="radio" name="S001" value="Третий" checked>
+<h3>Кнопка подтверждения ввода</h3>
+<input type="submit" value="Подтверждение">
+<h3>Кнопка с изображением</h3>
+<input type="image" src="logotip.jpg">
+<h3>Кнопка очистки формы</h3>
+<input type="reset" value="Очистка">
+<h3>Файл</h3>
+<input type="file" name="photo" accept="image/*">
+<hr color="blue">
+<h2>Элемент SELECT</h2>
+<select multiple>
+<option value=a>Первый
+<option value=b>Второй
+<option value=c>Третий
+<option value=d>Четвертый
+</select>
+<hr color="blue">
+<h2>Элемент TEXTAREA
+<textarea rows=5 cols=30>
+Область для ввода текста
+</textarea></h2>
+<hr color="blue">
+<h2>Кнопка с надписью и рисунком</h2>
+<button name="submit" value="submit" type="submit">
+Надпись<img src="logotip.jpg" alt="Рисунок"></button>
+<hr color="blue">
+<h2>Группа полей</h2>
+<fieldset>
+<legend>Заголовок группы</legend>
+Имя:<input name="imya2" type="text">
+Фамилия: <input name="familiya2" type="text"><br>
+Телефон: <input name="teledon2" type="text"><br>
+Текст подсказки
+</fieldset>
+<hr color="blue">
+</body>
+</html>
