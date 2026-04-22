@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Фоновый рисунок и бегущая строка</title>
+  <style>
+    @keyframes slide {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+
+    @keyframes slideAlternate {
+      0% { transform: translateX(100%); }
+      50% { transform: translateX(-100%); }
+      100% { transform: translateX(100%); }
+    }
+
+    body {
+      background-image: url('Зима.jpg');
+      background-size: cover;
+      color: white;
+    }
+
+    .running-text {
+      white-space: nowrap;
+      overflow: hidden;
+      animation: slide 5s linear infinite;
+    }
+
+    .running-text-alternate {
+      white-space: nowrap;
+      overflow: hidden;
+      animation: slideAlternate 5s linear infinite;
+    }
+  </style>
+</head>
+<body>
+  <h1>Фоновый рисунок и бегущая строка</h1>
+  
+  <div class="running-text">Это бегущая строка с обычной анимацией.</div>
+  <div class="running-text-alternate">Это бегущая строка с альтернативной анимацией.</div>
+</body>
+</html>
